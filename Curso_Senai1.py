@@ -1,5 +1,5 @@
 # pythoncurso1
-apenas exercicios do meu curso
+#apenas exercicios do meu curso
 
 print ("Atividade Paulo e Nathan")
 num=float(input("Digite um numero: "))
