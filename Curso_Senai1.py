@@ -155,14 +155,24 @@ else:
   
 print ("======================================================================================================================================================================")
 
-idade=int(input("Qual a sua idade fela?"))
+from datetime import date
 
-if idade == 18:
-  print ("hora de pular de paraquedas soldado KKKKKKKKK")
-elif idade < 18:
-  print ("Tá chegando a hora ein hahahahhah")
+atual= date.today ().year
+anoNasc= int(input("DIGITE O SUA DATA DE NASCIMENTO: "))
+temp= atual - anoNasc
+
+if  temp < 18:
+  print ("Ainda não é a hora de se alistar")
+  print (f"ainda faltam {18 - temp}")
+elif temp == 18:
+  qg=str(input("sua cidade tem qg? s/n  "))
+  if qg == "s":
+    print ("É hora de se alistar soldado kkkkkk ")
+  elif qg== "n":
+    print ("Se safou kkkkkkk")
 else:
-  print ("Já passou da hora de alistar!")
+  print ("Já passou da hora de se alistar")
+  print (f"você de deveria te rse alistado a {temp - 18 } atrás.")
 
 print ("======================================================================================================================================================================")
 
